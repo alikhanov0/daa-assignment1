@@ -2,6 +2,10 @@ package com.alikhanov;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        try {
+            Benchmark.main(args);
+        } catch (Exception exception) {
+            throw new RuntimeException(exception);
+        }
     }
 }
